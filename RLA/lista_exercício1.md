@@ -14,3 +14,7 @@ F--sim-->G{{Aprovado!}}
 F--não -->H{{Reprovado!}}
 G-->I([fim])
 H-->I([fim])
+```
+## pseudocódigo
+
+
