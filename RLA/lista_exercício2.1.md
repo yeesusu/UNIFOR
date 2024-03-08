@@ -1,1 +1,13 @@
+# unifor
+## fluxograma
+### exercício2.1
 
+```mermaid
+flowchart TD
+A([início])-->B[/X1, X2, X3, X4,  M/]
+B-->C{{"digite quatro números"}}
+C-->D[soma=X1+X2+X3+X4]
+D-->E[M=soma//4]
+E-->F{{"M=média"}}
+F-->Z([fim])
+```
