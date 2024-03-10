@@ -14,6 +14,7 @@ E-->Z([Fim])
 ## pesudograma
 ```
 INÍCIO
+ALGORITMO
 ESCREVA "digite a temperatura em Celsius"
 DECLARE C, F NÚMERICO
 LEIA C
