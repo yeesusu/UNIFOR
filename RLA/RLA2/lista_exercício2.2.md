@@ -13,10 +13,10 @@ E-->Z([Fim])
 ```
 ## pesudograma
 ```
-INÍCIO
 ALGORITMO
-ESCREVA "digite a temperatura em Celsius"
 DECLARE C, F NÚMERICO
+INÍCIO
+ESCREVA "digite a temperatura em Celsius"
 LEIA C
 F<--9/5*C+32
 ESCREVA "Temperatura em Fahrenheit é de" F
