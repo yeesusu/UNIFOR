@@ -12,10 +12,10 @@ E-->Z([Fim])
 ```
 # pesudograma
 ```
-INÍCIO
 ALGORITMO
 ESCREVA"digite uma quantidade de chuva dada em polegadas"
 DECLARE x
+INÍCIO
 LEIA x
 Q<--x*25,4
 ESCREVA"quantidade de chuva em milímetros="Q
