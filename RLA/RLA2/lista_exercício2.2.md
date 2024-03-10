@@ -11,7 +11,7 @@ D-->E{{"Temperatura em Fahrenheit é de F"}}
 E-->Z([Fim])
 
 ```
-
+## pesudograma
 ```
 INÍCIO
 ESCREVA "digite a temperatura em Celsius"
