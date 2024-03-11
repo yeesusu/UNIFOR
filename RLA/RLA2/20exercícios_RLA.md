@@ -350,3 +350,49 @@ ESCREVA"ordem será"y>x>z
 FIM_SE
 FIM_ALGORITMO
 ```
+
+## fluxograma
+## exercício2.13
+
+```mermaid
+flowchart TD
+A([início])-->B{{"digite a idade do nadador"}}
+B-->C[/x/]
+C-->D{5<=x<=7}
+D--V-->E{{"o nadador é classificado na categoria de infantil A."}}
+D--F-->G{8<=x<=10}
+G--V-->H{{"o nadador é classificado na categoria de infantil B."}}
+G--F-->I{11<=x<=13}
+I--V-->J{{"o nadador é classificado na categoria de juvenil A."}}
+I--F-->K{14<=x<=17}
+K--V-->L{{"o nadador é classificado na categoria de juvenil B."}}
+K--F-->M[x>18]
+M-->N{{"o nadador é classificado na categoria de adulto."}}
+N-->Z([FIM])
+L-->Z
+J-->Z
+H-->Z
+E-->Z
+```
+
+## peseudocódigo
+
+```
+ALGORITMO classificação
+DECLARE x NÚMERICO INTEIRO
+INÍCIO
+ESCOLHA
+  CASO 5<=x<=7
+  ESCREVA "o nadador é classificado na categoria de infantil A."
+  CASO 8<=x<=10
+  ESCREVA "o nadador é classificado na categoria de infantil B."
+  CASO 11<=x<=13
+  ESCREVA "o nadador é classificado na categoria de juvenil A."
+  CASO 14<=x<=17
+  ESCREVA "o nadador é classificado na categoria de juvenil B."
+  SENÃO
+  x>18
+  ESCREVA "o nadador é classificado na categoria de adulto."
+FIM_ESCOLHA
+FIM_ALGORITIMO
+```
