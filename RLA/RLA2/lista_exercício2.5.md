@@ -14,7 +14,7 @@ F-->Z([Fim])
 
 ## pseudocódigo
 ```
-ALGORITMO
+ALGORITMO calcquadrado de um número
 DECLARE x NÚMERICO
 INÍCIO
 ESCREVA"digite um número"
