@@ -6,7 +6,7 @@ flowchart TD
 A([início])-->B{{"digite um número"}}
 B-->C[/x/]
 C-->E[R=x^2]
-E-->F{{"esse número ao quadrado é R"}}
+E-->F{{"esse número ao quadrado é "R}}
 F-->Z([Fim])
 ```
 
@@ -19,5 +19,5 @@ DECLARE x NÚMERICO
 INÍCIO
 ESCREVA"digite um número"
 R<--x^2
-ESCREVA"esse número ao quadrado é "R""
+ESCREVA"esse número ao quadrado é "R
 FIM_ALGORITMO
