@@ -10,6 +10,8 @@ E-->F{{"esse número ao quadrado é R"}}
 F-->Z([Fim])
 ```
 
+    
+
 ## pseudocódigo
 ```
 ALGORITMO
