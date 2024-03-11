@@ -14,7 +14,7 @@ F-->G{{"salário do vendedor é"salário}}
 ## pseudocódigo
 
 ```
-ALGORITMO
+ALGORITMO calcsalário
 DECLARE qcarro,valor_venda NÚMERICO
 DECLARE nome
 INÍCIO
