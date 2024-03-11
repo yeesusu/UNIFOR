@@ -14,7 +14,7 @@ E-->Z([Fim])
 ```
 ALGORITMO calcquantidade de chuva em polegadas
 ESCREVA"digite uma quantidade de chuva dada em polegadas"
-DECLARE x
+DECLARE x NÚMERICO
 INÍCIO
 LEIA x
 Q<--x*25,4
