@@ -13,7 +13,7 @@ G-->Z([Fim])
 ## peseudocódigo
 ```
 ALGORIMO calccusto
-DECLARE c
+DECLARE c NÚMERICO
 ESCREVA"digite o custo de fábrica do carro"
 LEIA c
 INÍCIO
