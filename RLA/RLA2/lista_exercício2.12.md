@@ -8,7 +8,7 @@ flowchart TD
 A([início])-->B[/x, y, z/]
 B-->C{{"digite os três números"}}
 C-->D{x>y}
-D-sim->E{{"ordem será"x>y>z}}
+D--sim-->E{{"ordem será"x>y>z}}
 D--não-->F{{"ordem será"y>x>z}}
 E-->G{y>z}
 G--sim-->H{{"ordem será"x>y>z}}
