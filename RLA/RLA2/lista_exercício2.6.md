@@ -11,7 +11,7 @@ E-->Z([Fim])
 ```
 
 ```
-ALGORITMO
+ALGORITMO calccusto
 DECLARE qhamb,qcheese,qfritas,qrefri,qmilk
 INÍCIO
 ESCREVA"digite a quantidade de cada produto que consumiu"
