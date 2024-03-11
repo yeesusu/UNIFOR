@@ -13,7 +13,7 @@ E-->Z([Fim])
 ```
 ## pesudograma
 ```
-ALGORITMO
+ALGORITMO calctemperatura
 DECLARE C, F NÚMERICO
 INÍCIO
 ESCREVA "digite a temperatura em Celsius"
