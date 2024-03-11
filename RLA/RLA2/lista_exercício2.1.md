@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TD
 A([início])-->B[/X1, X2, X3, X4,  M/]
-B-->C{{"digite quatro números"}}
+B-->C{{"digite quatro notas de avaliação"}}
 C-->D["M=(X1+X2+X3+X4)/4"]
 D-->F{{"média é de"M}}
 F-->Z([fim])
@@ -14,7 +14,7 @@ F-->Z([fim])
 ## pseudodrama
 ```
 ALGORITMO CALCULAR MÉDIA
-DECLARE X1, X2 , X3, X4, M NÚMERICO
+DECLARE X1, X2 , X3, X4, M NÚMERICO INTEIRO
 INÍCIO
 ESCREVA"DIGITE QUATRO NOTAS DE AVALIAÇÕES "
 LEIA X1, X2, X3, X4
