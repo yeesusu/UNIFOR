@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TD
 A([início])-->B[/X1, X2, X3, X4,  M/]
-B-->C{{"digite quatro notas de avaliação"}}
+B-->C{{"digite quatro notas de avaliações"}}
 C-->D["M=(X1+X2+X3+X4)/4"]
 D-->F{{"média é de"M}}
 F-->Z([fim])
