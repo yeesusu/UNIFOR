@@ -6,9 +6,8 @@
 flowchart TD
 A([início])-->B[/X1, X2, X3, X4,  M/]
 B-->C{{"digite quatro números"}}
-C-->D[soma=X1+X2+X3+X4]
-D-->E[M=soma//4]
-E-->F{{"M=média"}}
+C-->D["M=(X1+X2+X3+X4)/4"]
+D-->F{{"média é de"M}}
 F-->Z([fim])
 ```
 
@@ -19,8 +18,7 @@ DECLARE X1, X2 , X3, X4, M NÚMERICO
 INÍCIO
 ESCREVA"DIGITE QUATRO NOTAS DE AVALIAÇÕES "
 LEIA X1, X2, X3, X4
-SOMA<--X1+X2+X3+X4
-M<--SOMA/4
+M<--(X1+X2+X3+X4)/4
 ESCREVA"MÉDIA="M
 FIM_ALGORITMO
 ```
