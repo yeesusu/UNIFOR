@@ -12,7 +12,7 @@ E-->Z([Fim])
 ```
 # pesudograma
 ```
-ALGORITMO
+ALGORITMO calcquantidade de chuva em polegadas
 ESCREVA"digite uma quantidade de chuva dada em polegadas"
 DECLARE x
 INÍCIO
