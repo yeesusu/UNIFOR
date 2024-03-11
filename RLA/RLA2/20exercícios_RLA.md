@@ -1,0 +1,352 @@
+# unifor
+## fluxograma
+### exercício2.1
+
+```mermaid
+flowchart TD
+A([início])-->B[/X1, X2, X3, X4,  M/]
+B-->C{{"digite quatro notas de avaliações"}}
+C-->D["M=(X1+X2+X3+X4)/4"]
+D-->F{{"média é de"M}}
+F-->Z([fim])
+```
+
+## pseudodrama
+```
+ALGORITMO calcmédia
+DECLARE X1, X2 , X3, X4, M NÚMERICO INTEIRO
+INÍCIO
+ESCREVA"DIGITE QUATRO NOTAS DE AVALIAÇÕES "
+LEIA X1, X2, X3, X4
+M<--(X1+X2+X3+X4)/4
+ESCREVA"MÉDIA="M
+FIM_ALGORITMO
+```
+
+
+## fluxograma
+### exercício2.2
+```mermaid
+flowchart TD
+A([início ])-->B{{digite a temperatura em celsius}}
+B-->C[/x/]
+C-->D["F = (9/5 * C) + 32"]
+D-->E{{"Temperatura em Fahrenheit é de"F}}
+E-->Z([Fim])
+
+```
+## pesudograma
+```
+ALGORITMO calctemperatura
+DECLARE C, F NÚMERICO
+INÍCIO
+ESCREVA "digite a temperatura em Celsius"
+LEIA C
+F<--(9/5*C)+32
+ESCREVA "Temperatura em Fahrenheit é de" F
+FIM_ALGORITMO```
+```
+
+## fluxograma
+### exercício2.3
+
+```mermaid
+flowchart TD
+A([início])-->B{{"digite uma quantidade de chuva dada em polegadas"}}
+B-->C[/x/]
+C-->D[Q=x*25,4 ]
+D-->E{{"quantidade de chuva em milímetros=Q"}}
+E-->Z([Fim])
+```
+## pesudograma
+```
+ALGORITMO calcquantidade de chuva em polegadas
+ESCREVA"digite uma quantidade de chuva dada em polegadas"
+DECLARE x NÚMERICO
+INÍCIO
+LEIA x
+Q<--x*25,4
+ESCREVA"quantidade de chuva em milímetros="Q
+FIM_ALGORITMO
+```
+
+## fluxograma
+### exercício2.4
+
+```mermaid
+flowchart TD
+A([início])-->B{{"digite o custo de fábrica do carro"}}
+B-->C[/c/]
+C-->D["custo_total=c+(c*12%)+(c+45%)"]
+D-->G{{"o custo ao consumidor é"custo_total}}
+G-->Z([Fim])
+```
+## peseudocódigo
+```
+ALGORIMO calccusto
+DECLARE c NÚMERICO
+ESCREVA"digite o custo de fábrica do carro"
+LEIA c
+INÍCIO
+custo_total<--c+(c*12%)+(c*45%)
+ESCREVA"o conta ao consumidor"custo_total
+FIM_ALGORITMO
+```
+
+
+## fluxogrma
+### exercício2.5
+```mermaid
+flowchart TD
+A([início])-->B{{"digite um número"}}
+B-->C[/x/]
+C-->E[R=x^2]
+E-->F{{"esse número ao quadrado é "R}}
+F-->Z([Fim])
+```
+
+    
+
+## pseudocódigo
+```
+ALGORITMO calcquadrado de um número
+DECLARE x NÚMERICO
+INÍCIO
+ESCREVA"digite um número"
+LEIA x
+R<--x^2
+ESCREVA"esse número ao quadrado é "R
+FIM_ALGORITMO
+```
+
+## FLUXOGRAMA
+### EXERCÍCIO2.6
+```mermaid
+flowchart TD
+A([início])-->B[/qhamb,qcheese,qfritas,qrefri,qmilk/]
+B-->C{{"digite a quantidade de cada produto seguinte,respectivamente:hambúrguer, cheeseburger, fritas, milkshake"}}
+C-->D["custo final=(qhamb*3)+(qcheese*2.5)+(qfritas*2.5)+(qrefri*1)+(qmilk*3)"]
+D-->E{{"conta final é de"custo final}}
+E-->Z([Fim])
+```
+## pseudocódigo 
+```
+
+ALGORITMO calccusto
+DECLARE qhamb, qcheese, qfritas, qrefri, qmilk NÚMERICO
+INÍCIO
+ESCREVA "digite a quantidade de cada produto seguinte, respectivamente: hambúrguer,  cheeseburger,  fritas, milkshake"
+LEIA qhamb, qcheese, qfritas, qrefri, qmilk
+custo final<-- (qhburg * 3) + (qchees * 2,50) + (qfritas * 2,50) + (qrefri * 1) + (qmilk * 3)
+ESCREVA "conta final é de"custo final
+FIM_ALGORITMO
+```
+
+## fluxograma
+### exercício2.7
+
+```mermaid
+flowchart TD
+A([início])-->B[/qcarro,valor_venda/]
+B-->C{{"digite a quantidade de carros vendido"}}
+C-->D["X=500+(qcarro*50)"]
+D-->E{{"digite o valor_venda"}}
+E-->F[salário=X+valor_venda]
+F-->G{{"salário do vendedor é"salário}}
+```
+## pseudocódigo
+
+```
+ALGORITMO calcsalário
+DECLARE qcarro,valor_venda NÚMERICO
+DECLARE nome
+INÍCIO
+ESCREVA"digite seu nome completo:"
+LEIA nome
+ESCREVA"digite a quantidade de carros vendido"
+LEIA qcarro
+X<--500+(qcarro*50)
+ESCREVA"digite o valor_venda"
+LEIA valor_venda
+salário<--X+valor_venda
+ESCREVA"salário do vendedor é"salário
+FIM_ALGORITMO
+```
+## fluxograma
+### exrcício2.8
+
+
+```mermaid
+flowchart TD
+A([início])-->B[/nome, nota_prova, nota_qualitativa/]
+B-->C{{"digite seu nome completo"}}
+C-->D{{"digite a nota da prova e a nota qualitativa respectivamente"}}
+D-->E["M=[(2*nota_prova)+nota_qualitativa]/3"]
+E-->F{{"média ="M}}
+F-->Z([FIM])
+```
+
+
+## psedocódigo
+```
+ALGORITMO calcmédia
+DECLARE nome
+DECLARE nota_prova, nota_qualitativa NÚMERICO
+INÍCIO
+ESCREVA "digite seu nome completo"
+LEIA nome
+ESCREVA "digite a nota da prova e a nota qualitativa respectivamente"
+LEIA  nota_prova, nota_qualitativa
+M<--[(2*nota_prova)+nota_qualitativa]/3
+ESCREVA "média ="M
+FIM_ALGORITMO
+```
+## fluxograma
+### exercício2.9
+
+```mermaid
+flowchart TD
+A([Início])-->B{{"preencha abaixo a ficha de inscrição com nome, matricula, curso, idade,  e-mail,respectivamente: "}}
+B-->C[\nome, curso, email, matricula, idade\]
+C-->D{{"Ficha de Inscrição"}}
+D-->E{{"Nome: "nome}}
+E-->F{{"Matricula: "matricula}}
+F-->G{{"Curso: "curso}}
+G-->H{{"Idade: "idade}}
+H-->I{{"E-mail: "email}}
+I-->J([Fim])
+```
+## pseudocódigo
+```
+ALGORITMO
+DECLARE matricula,  idade NÚMERICO 
+DECLARE email, nome,  curso
+INÍCIO
+ESCREVA "preencha abaixo a ficha de inscrição com nome, matricula, curso, idade, 
+ e-mail, respectivamente: "
+ LEIA  nome, matricula, curso, idade, email
+ESCREVA "Ficha de Inscrição"
+ESCREVA "Nome: "nome
+ESCREVA "Matricula: "matricula
+ESCREVA "Curso: "curso
+ESCREVA "Idade: "idade
+ESCREVA "E-mail: "email
+FIM_ALGORITMO
+
+
+```
+
+## fluxograma
+### exercício2.10
+
+```mermaid
+flowchart TD
+A([início])-->B[/área, perímetro/]
+B-->C{{"digite o raio  do círculo"}}
+C-->D[área=Ⲡ * raio^2]
+D-->E[perímetro= 2 * Ⲡ * raio]
+E-->F{{"Área do círculo"área}}
+F-->G{{"Perímetro do círculo"perímetro}}
+G-->Z([Fim])
+```
+## pseudocódigo
+```
+ALGORITMO calcarea e perimetro
+DECLARE área, perímetro NÚMERICO
+INÍCIO
+ESCREVA "digite o raio  do círculo"
+área<--Ⲡ * raio^2
+perímetro<-- 2 * Ⲡ * raio
+ESCREVA "Área do círculo"área
+ESCREVA "Perímetro do círculo"perímetro
+FIM_ALGORTIMO
+```
+
+## fluxograma
+### exercício2.11
+
+```mermaid
+flowchart TD
+A([início])-->B[/x,q,c,rq,rc/]
+B-->C{x>0}
+C--sim-->D{{"digite o número"}}
+D-->E["q=x^2"]
+E-->F["c=x^3"]
+F-->G["rq=x^(1/2)"]
+G-->H["rc=x^(1/3)"]
+H-->J{{"seguinte números são respectivamente em elevação ao quadrado, elevação ao cubo, em raiz ao quadrado, raiz ao cubo:"q, c, rq, rc}}
+C--não-->I{{"número invalido!Tente novamente!"}}
+J-->Z([Fim])
+I-->Z
+```
+## pseudocódigo
+```
+ALGORITMO
+DECLARE x,q,c,rq,rc NÚMERICO
+INÍCIO
+SE x>0
+ESCREVA "digite o número"
+q<--x^2
+c<--x^3
+rq<--x^(1/2)
+rc<--x^(1/3)
+ESCREVA "seguinte números são respectivamente em elevação ao quadrado, elevação ao cubo, em raiz ao quadrado, raiz ao cubo:"q, c, rq, rc
+SENÃO
+ESCREVA "número invalido!Tente novamente!"
+FIM_ALGORITMO
+
+```
+## fluxograma
+### exercício2.12
+
+```mermaid
+flowchart TD
+A([início])-->B[/x, y, z/]
+B-->C{{"digite os três números"}}
+C-->D{x>y}
+D--sim-->E{{"ordem será"x>y>z}}
+D--não-->F{{"ordem será"y>x>z}}
+E-->G{y>z}
+G--sim-->H{{"ordem será"x>y>z}}
+G--não-->I{{"ordem será"x>z>y}}
+F-->M{x>z}
+M--sim-->O{{"ordem será"y>x>z}}
+M--não-->P{{"ordem será"y>z>x}}
+I-->J{z>x}
+J--sim-->L{{"ordem será"z>x>y}}
+J--não-->N{{"ordem será"x>z>y}}
+L-->Z([FIM])
+N-->Z
+O-->Z
+P-->Z
+H-->Z
+I-->Z
+E-->Z
+F-->Z
+```
+## pesudocódigo
+```
+ALGORITMO
+DESCREVA "digite os três números"
+SE
+x>y
+ESCREVA "ordem será"x>y>z
+  SE
+  y>z
+    ESCREVA"ordem será"x>y>z
+  SENÃO
+    ESCREVA"ordem será"x>z>y
+    SEy>z
+      ESCREVA"ordem será"z>x>y
+    SENÃO
+      ESCREVA"ordem será"x>z>y
+SENÃO
+ESCREVA"ordem será"y>x>z
+  SE
+  x>z
+    ESCREVA"ordem será"y>x>z
+  SENÃO
+    ESCREVA"ordem será"y>z>x
+FIM_SE
+FIM_ALGORITMO
+```
