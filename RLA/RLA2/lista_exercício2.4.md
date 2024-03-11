@@ -13,8 +13,9 @@ G-->Z([Fim])
 ## peseudocódigo
 ```
 ALGORIMO
-ESCREVA"digite o custo de fábrica do carro"
 DECLARE c
+ESCREVA"digite o custo de fábrica do carro"
+LEIA c
 INÍCIO
 custo_total<--c+(c*12%)+(c*45%)
 ESCREVA"o custo ao consumidor"custo_total
