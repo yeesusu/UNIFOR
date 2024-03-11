@@ -18,6 +18,7 @@ ALGORITMO
 DECLARE x NÚMERICO
 INÍCIO
 ESCREVA"digite um número"
+LEIA x
 R<--x^2
 ESCREVA"esse número ao quadrado é "R
 FIM_ALGORITMO
