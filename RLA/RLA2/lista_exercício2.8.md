@@ -17,7 +17,8 @@ F-->Z([FIM])
 ## psedocódigo
 ```
 ALGORITMO calcmédia
-DECLARE nome, nota_prova, nota_qualitativa
+DECLARE nome
+DECLARE nota_prova, nota_qualitativa NÚMERICO
 INÍCIO
 ESCREVA "digite seu nome completo"
 LEIA nome
