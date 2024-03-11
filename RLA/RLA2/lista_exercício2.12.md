@@ -28,3 +28,32 @@ I-->Z
 E-->Z
 F-->Z
 ```
+
+```
+ALGORITMO
+DESCREVA "digite os três números"
+SE
+x>y
+ESCREVA "ordem será"x>y>z
+  SE
+  y>z
+    ESCREVA"ordem será"x>y>z
+  SENÃO
+    ESCREVA"ordem será"x>z>y
+    SEy>z
+      ESCREVA"ordem será"z>x>y
+    SENÃO
+      ESCREVA"ordem será"x>z>y
+SENÃO
+ESCREVA"ordem será"y>x>z
+  SE
+  x>z
+    ESCREVA"ordem será"y>x>z
+  SENÃO
+    ESCREVA"ordem será"y>z>x
+FIM_SE
+FIM_ALGORITMO
+```
+
+
+
