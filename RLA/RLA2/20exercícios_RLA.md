@@ -29,7 +29,7 @@ FIM_ALGORITMO
 ```mermaid
 flowchart TD
 A([início ])-->B{{digite a temperatura em celsius}}
-B-->C[/c/]
+B-->C[/c,F/]
 C-->D["F = (9/5 * c) + 32"]
 D-->E{{"Temperatura em Fahrenheit é de"F}}
 E-->Z([Fim])
@@ -53,7 +53,7 @@ FIM_ALGORITMO```
 ```mermaid
 flowchart TD
 A([início])-->B{{"digite uma quantidade de chuva dada em polegadas"}}
-B-->C[/x/]
+B-->C[/x, Q/]
 C-->D[Q=x*25,4 ]
 D-->E{{"quantidade de chuva em milímetros=Q"}}
 E-->Z([Fim])
@@ -62,7 +62,7 @@ E-->Z([Fim])
 ```
 ALGORITMO calcquantidade de chuva em polegadas
 ESCREVA"digite uma quantidade de chuva dada em polegadas"
-DECLARE x NÚMERICO
+DECLARE x, Q NÚMERICO
 INÍCIO
 LEIA x
 Q<--x*25,4
@@ -76,7 +76,7 @@ FIM_ALGORITMO
 ```mermaid
 flowchart TD
 A([início])-->B{{"digite o custo de fábrica do carro"}}
-B-->C[/c/]
+B-->C[/c, custo_total/]
 C-->D["custo_total=c+(c*12%)+(c+45%)"]
 D-->G{{"o custo ao consumidor é"custo_total}}
 G-->Z([Fim])
@@ -84,7 +84,7 @@ G-->Z([Fim])
 ## peseudocódigo
 ```
 ALGORIMO calccusto
-DECLARE c NÚMERICO
+DECLARE c, custo_total NÚMERICO
 ESCREVA"digite o custo de fábrica do carro"
 LEIA c
 INÍCIO
@@ -99,7 +99,7 @@ FIM_ALGORITMO
 ```mermaid
 flowchart TD
 A([início])-->B{{"digite um número"}}
-B-->C[/x/]
+B-->C[/x, R/]
 C-->E[R=x^2]
 E-->F{{"esse número ao quadrado é "R}}
 F-->Z([Fim])
@@ -110,7 +110,7 @@ F-->Z([Fim])
 ## pseudocódigo
 ```
 ALGORITMO calcquadrado de um número
-DECLARE x NÚMERICO
+DECLARE x, R NÚMERICO
 INÍCIO
 ESCREVA"digite um número"
 LEIA x
@@ -123,10 +123,10 @@ FIM_ALGORITMO
 ### EXERCÍCIO2.6
 ```mermaid
 flowchart TD
-A([início])-->B[/qhamb,qcheese,qfritas,qrefri,qmilk/]
+A([início])-->B[/qhamb, qcheese, qfritas, qrefri, qmilk, custo_final/]
 B-->C{{"digite a quantidade de cada produto seguinte,respectivamente:hambúrguer, cheeseburger, fritas, milkshake"}}
-C-->D["custo final=(qhamb*3)+(qcheese*2.5)+(qfritas*2.5)+(qrefri*1)+(qmilk*3)"]
-D-->E{{"conta final é de"custo final}}
+C-->D["custo_final=(qhamb*3)+(qcheese*2.5)+(qfritas*2.5)+(qrefri*1)+(qmilk*3)"]
+D-->E{{"conta final é de"custo_final}}
 E-->Z([Fim])
 ```
 ## pseudocódigo 
@@ -134,11 +134,12 @@ E-->Z([Fim])
 
 ALGORITMO calccusto
 DECLARE qhamb, qcheese, qfritas, qrefri, qmilk NÚMERICO
+DECLARE custo_final
 INÍCIO
 ESCREVA "digite a quantidade de cada produto seguinte, respectivamente: hambúrguer,  cheeseburger,  fritas, milkshake"
 LEIA qhamb, qcheese, qfritas, qrefri, qmilk
-custo final<-- (qhburg * 3) + (qchees * 2,50) + (qfritas * 2,50) + (qrefri * 1) + (qmilk * 3)
-ESCREVA "conta final é de"custo final
+custo_final<-- (qhburg * 3) + (qchees * 2,50) + (qfritas * 2,50) + (qrefri * 1) + (qmilk * 3)
+ESCREVA "conta final é de"custo_final
 FIM_ALGORITMO
 ```
 
@@ -147,7 +148,7 @@ FIM_ALGORITMO
 
 ```mermaid
 flowchart TD
-A([início])-->B[/qcarro,valor_venda/]
+A([início])-->B[/qcarro, valor_venda, salário, X/]
 B-->C{{"digite a quantidade de carros vendido"}}
 C-->D["X=500+(qcarro*50)"]
 D-->E{{"digite o valor_venda"}}
@@ -158,7 +159,8 @@ F-->G{{"salário do vendedor é"salário}}
 
 ```
 ALGORITMO calcsalário
-DECLARE qcarro,valor_venda NÚMERICO
+DECLARE qcarro,valor_venda,X NÚMERICO
+DECLARE salário
 DECLARE nome
 INÍCIO
 ESCREVA"digite seu nome completo:"
@@ -178,7 +180,7 @@ FIM_ALGORITMO
 
 ```mermaid
 flowchart TD
-A([início])-->B[/nome, nota_prova, nota_qualitativa/]
+A([início])-->B[/nome, nota_prova, nota_qualitativa, M/]
 B-->C{{"digite seu nome completo"}}
 C-->D{{"digite a nota da prova e a nota qualitativa respectivamente"}}
 D-->E["M=[(2*nota_prova)+nota_qualitativa]/3"]
@@ -191,7 +193,7 @@ F-->Z([FIM])
 ```
 ALGORITMO calcmédia
 DECLARE nome
-DECLARE nota_prova, nota_qualitativa NÚMERICO
+DECLARE nota_prova, nota_qualitativa, M NÚMERICO
 INÍCIO
 ESCREVA "digite seu nome completo"
 LEIA nome
@@ -241,7 +243,7 @@ FIM_ALGORITMO
 
 ```mermaid
 flowchart TD
-A([início])-->B[/área, perímetro/]
+A([início])-->B[/área, perímetro, raio/]
 B-->C{{"digite o raio  do círculo"}}
 C-->D[área=Ⲡ * raio^2]
 D-->E[perímetro= 2 * Ⲡ * raio]
@@ -252,7 +254,7 @@ G-->Z([Fim])
 ## pseudocódigo
 ```
 ALGORITMO calcarea e perimetro
-DECLARE área, perímetro NÚMERICO
+DECLARE área, perímetro, raio NÚMERICO
 INÍCIO
 ESCREVA "digite o raio  do círculo"
 área<--Ⲡ * raio^2
