@@ -396,3 +396,46 @@ ESCOLHA
 FIM_ESCOLHA
 FIM_ALGORITIMO
 ```
+
+## fluxograma
+### exercício2.14
+
+
+```mermaid
+flowchart TD
+A([início])-->B[/x, y, z/]
+B-->C{{"digite os três números aleatórios"}}
+C-->D{x>y}
+D--sim-->E{{"ordem será"x>y>z}}
+D--não-->F{{"ordem será"y>x>z}}
+E-->G{y>z}
+G--sim-->H{{"menor será"z}}
+G--não-->I{{"menor será"y}}
+F-->M{x>z}
+M--sim-->O{{"menor será"z}}
+M--não-->P{{"menor será"x}}
+O-->Z([FIM])
+P-->Z
+H-->Z
+I-->Z
+```
+
+## pseudocógo
+```
+ALGORITMO observaçãonúmerico
+DECLARE x, y, z NÚMERICO
+INÍCIO
+ESCREVA "digite os três números aleatórios"
+SE x>y
+ESCREVA "ordem será"x>y>z
+SENÃO ESCREVA "ordem será"y>x>z
+ SE y>z
+ ESCREVA "menor será"z
+ SENÃO "menor será"y
+  SE x>z
+  ESCREVA "menor será"z
+  SENÃO ESCREVA "menor será"x
+ FIM_SE
+ FIM_ALGORITMO
+
+```
