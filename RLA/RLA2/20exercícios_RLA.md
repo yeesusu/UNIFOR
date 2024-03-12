@@ -508,3 +508,57 @@ SENÃO "PF,o aluno está em prova final"
 FIM_ESCOLHA
 FIM_ALGORITMO
 ```
+
+## fluxograma
+### exercício
+
+```mermaid
+flowchart TD
+A([início])-->B[/salário_inicial,x , y, z, a, b/]
+B-->C{{"digite o salário inicial."}}
+C-->D{"salário_inicial<=1499.15"}
+D--V-->E[salário_iniciao=x]
+E-->X{{"salário líquido dele(a) é de"x}}
+X-->Z
+D--F-->G{"1499.16<=salário_inicial<=2246.75"}
+G--V-->H[y=salário_inicial*7.5%]
+H-->I{{"salário líquido dele(a) é de"y}}
+I-->Z([FIM])
+G-->J{"2246.76<=salário_inicial<=2995.70"}
+J--V-->K[z=salário_inicial*15%]
+K-->L{{"salário líquido dele(a) é de"z}}
+L-->Z
+J--F-->M{"2995.71<=salário_inicial<=3743.19"}
+M--V-->N[a=salário_inicial*22.5%]
+N-->O{{"salário líquido dele(a) é de"a}}
+O-->Z
+M--F-->P["salário inicial>3743.2"]
+P-->Q[b=salário_inicial*27.5%]
+Q-->R{{"salário líquido dele(a) é de"b}}
+R-->Z
+```
+## pseudocógo
+```
+ALGORITMO calcsalário
+DECLARE salário_inicial,x , y, z, a, b
+INÍCIO
+ESCREVA "digite o salário inicial."
+ESCOLHA 
+CASO salário_inicial<=1499.15
+salário_iniciao<--x
+ESCREVA "salário líquido dele(a) é de"x
+CASO 1499.16<=salário_inicial<=2246.75
+y<--salário_inicial*7.5%
+ESCREVA "salário líquido dele(a) é de"y
+CASO 2246.76<=salário_inicial<=2995.70
+z<--salário_inicial*15%
+ESCREVA "salário líquido dele(a) é de"z
+CASO 2995.71<=salário_inicial<=3743.19
+a<--salário_inicial*22.5%
+ESCREVA "salário líquido dele(a) é de"a
+SENÃO salário inicial>3743.2
+b<--salário_inicial*27.5%
+ESCREVA "salário líquido dele(a) é de"b
+FIM_ESCOLHA 
+FIM_ALGORITMO
+```
