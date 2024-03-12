@@ -130,8 +130,12 @@ C-->E[R=x^2]
 E-->F{{"esse número ao quadrado é "R}}
 F-->Z([Fim])
 ```
-
-    
+## teste 
+|x|x^2|
+|-|-|
+|2|4|
+|3|9|  
+|4|16|
 
 ## pseudocódigo
 ```
@@ -157,6 +161,7 @@ E-->Z([Fim])
 ```
 ## pseudocódigo 
 ```
+
 
 ALGORITMO calccusto
 DECLARE qhamb, qcheese, qfritas, qrefri, qmilk NÚMERICO
