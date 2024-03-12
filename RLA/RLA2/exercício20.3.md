@@ -22,7 +22,7 @@ ESCREVA "digite um número aleatório"
 DECLARE x
 INÍCIO
 ENQUANTO x<0 FAÇA
-	"digite um número."
+	ESCREVA "digite um número."
 FIM_ENQUANTO
 ESCREVA "número escolhido é positivo"
 r<--x%2
