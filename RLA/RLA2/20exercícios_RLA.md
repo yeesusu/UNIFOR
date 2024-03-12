@@ -329,7 +329,8 @@ F-->Z
 ## pesudocódigo
 ```
 ALGORITMO
-DESCREVA "digite os três números"
+DECLARE x, y, z NÚMERICO
+ESCREVA "digite os três números"
 LEIA x, y, z
 SE
 x>y
@@ -463,7 +464,7 @@ G-->Z
 ## pseudocógo
 ```
 ALGORITMO calcpeso
-DECLARE x,y
+DECLARE x,y NÚMERICO
 INÍCIO
 ESCREVA "digite o peso desejado em libras(Lb)"
 LEIA x
@@ -540,7 +541,7 @@ R-->Z
 ## pseudocógo
 ```
 ALGORITMO calcsalário
-DECLARE salário_inicial,x , y, z, a, b
+DECLARE salário_inicial,x , y, z, a, b NÚMERICO
 INÍCIO
 ESCREVA "digite o salário inicial."
 LEIA salário_inicial
@@ -590,7 +591,7 @@ R-->Z
 ## pseudocógo
 ```
 ALGORITMO calcsalário
-DECLARE nota
+DECLARE nota NÚMERICO
 INÍCIO
 ESCREVA "digite nota da avaliação."
 LEIA nota
