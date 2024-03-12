@@ -29,8 +29,8 @@ FIM_ALGORITMO
 ```mermaid
 flowchart TD
 A([início ])-->B{{digite a temperatura em celsius}}
-B-->C[/x/]
-C-->D["F = (9/5 * C) + 32"]
+B-->C[/c/]
+C-->D["F = (9/5 * c) + 32"]
 D-->E{{"Temperatura em Fahrenheit é de"F}}
 E-->Z([Fim])
 
@@ -38,11 +38,11 @@ E-->Z([Fim])
 ## pesudograma
 ```
 ALGORITMO calctemperatura
-DECLARE C, F NÚMERICO
+DECLARE c, F NÚMERICO
 INÍCIO
 ESCREVA "digite a temperatura em Celsius"
-LEIA C
-F<--(9/5*C)+32
+LEIA c
+F<--(9/5*c)+32
 ESCREVA "Temperatura em Fahrenheit é de" F
 FIM_ALGORITMO```
 ```
