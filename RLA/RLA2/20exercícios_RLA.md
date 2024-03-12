@@ -328,6 +328,7 @@ F-->Z
 ```
 ALGORITMO
 DESCREVA "digite os três números"
+LEIA x, y, z
 SE
 x>y
 ESCREVA "ordem será"x>y>z
@@ -381,6 +382,8 @@ E-->Z
 ALGORITMO classificação
 DECLARE x NÚMERICO INTEIRO
 INÍCIO
+ESCREVA "digite a idade do nadador"
+LEIA x
 ESCOLHA
   CASO 5<=x<=7
   ESCREVA "o nadador é classificado na categoria de infantil A."
@@ -426,6 +429,7 @@ ALGORITMO observaçãonúmerico
 DECLARE x, y, z NÚMERICO
 INÍCIO
 ESCREVA "digite os três números aleatórios"
+LEIA x, y, z
 SE x>y
 ESCREVA "ordem será"x>y>z
 SENÃO ESCREVA "ordem será"y>x>z
@@ -438,4 +442,34 @@ SENÃO ESCREVA "ordem será"y>x>z
  FIM_SE
  FIM_ALGORITMO
 
+```
+
+## fluxograma
+### exercício2.15
+
+```mermaid
+flowchart TD
+A([início])-->B[/x,y/]
+B-->C{{"digite o peso desejado em libras(Lb)"}}
+C-->D{x>0}
+D--sim-->E[y=x*2.2]
+D--não-->F{{"Atenção!Peso inválido!Digite novamente."}}
+E-->G{{"Peso expresso emquilogramas(Kg):"y}}
+F-->Z([FIM])
+G-->Z
+```
+## pseudocógo
+```
+ALGORITMO calcpeso
+DECLARE x,y
+INÍCIO
+ESCREVA "digite o peso desejado em libras(Lb)"
+LEIA x
+SE x>0
+y<--x*2.2
+ESCREVA "Peso expresso emquilogramas(Kg):"y
+LEIA y
+SENÃO ESCREVA "Atenção!Peso inválido!Digite novamente."
+FIM_SE
+FIM_ALGORITMO
 ```
