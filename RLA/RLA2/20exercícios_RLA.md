@@ -22,6 +22,13 @@ M<--(X1+X2+X3+X4)/4
 ESCREVA"MÉDIA="M
 FIM_ALGORITMO
 ```
+## teste
+
+|X1|X2|X3|X4|soma| média |
+|-|-|-|-|-|-|
+|6|6|9|7|28|7
+|7|6|4|3|20|5
+|3|6|9|6|24|6
 
 
 ## fluxograma
@@ -44,8 +51,14 @@ ESCREVA "digite a temperatura em Celsius"
 LEIA c
 F<--(9/5*c)+32
 ESCREVA "Temperatura em Fahrenheit é de" F
-FIM_ALGORITMO```
+FIM_ALGORITMO
 ```
+## teste
+|Celsius (C°)|Fahrenheit (F°)|
+|-|-|
+|75|135|
+|85|153|
+|55|99|
 
 ## fluxograma
 ### exercício2.3
@@ -69,6 +82,13 @@ Q<--x*25,4
 ESCREVA"quantidade de chuva em milímetros="Q
 FIM_ALGORITMO
 ```
+## teste
+|Polegadas|milímetro|
+|-|-|
+|85|2159|
+|623|15824.2|
+|12|304.8|
+
 
 ## fluxograma
 ### exercício2.4
@@ -92,6 +112,12 @@ custo_total<--c+(c*12%)+(c*45%)
 ESCREVA"o conta ao consumidor"custo_total
 FIM_ALGORITMO
 ```
+## teste
+|custo de fábrica do carro|distribuidor|imposto|custo total
+|-|-|-|-|
+|1234|148.08|555.3|1937.38
+|3456|414.72|1555.2|5425.92
+|1111|133.32|499.95|1744.27
 
 
 ## fluxogrma
