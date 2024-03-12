@@ -475,3 +475,35 @@ SENÃO ESCREVA "Atenção!Peso inválido!Digite novamente."
 FIM_SE
 FIM_ALGORITMO
 ```
+
+## fluxograma
+### exercício2.16
+
+```mermaid
+flowchart TD
+A([início])-->B[/média_final/]
+B-->C{{"digite a média_final"}}
+C-->J{"média_final>=6"}
+J--V-->D{{"AP,o aluno está aprovado."}}
+J--F-->E{"média_final<3"}
+E--V-->G{{"RM,o aluno está reprovado."}}
+E--F-->H{{"PF,o aluno está em prova final"}}
+D-->Z([FIM])
+G-->Z
+H-->Z
+```
+## pseudocógo
+```
+ALGORITMO 
+DECLARE média_final NÚMERICO
+INÍCIO
+ESCREVA "digite a média_final"
+ESCOLHA
+CASO média_final>=6
+ESCREVA "AP,o aluno está aprovado."
+CASO média_final<3
+ESCREVA "RM,o aluno está reprovado."
+SENÃO "PF,o aluno está em prova final"
+FIM_ESCOLHA
+FIM_ALGORITMO
+```
