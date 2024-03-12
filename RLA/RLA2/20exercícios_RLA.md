@@ -610,3 +610,36 @@ FIM_ESCOLHA
 FIM_ALGORITMO
 ```
 
+## fluxograma
+### exercício
+
+```mermaid
+flowchart TD
+A([início])-->B[/x/]
+B-->C{{"digite um número x aleatório"}}
+C-->D{"x>0"}
+D--V-->E{{"x é positivo"}}
+E-->Z([FIM])
+E--F-->G{"x<0"}
+G--V-->H{{"x é negativo"}}
+H-->Z
+G--F-->I{{"x é nulo"}}
+I-->Z
+```
+## pseudocógo
+```
+ALGORITMO classificação de x
+DECLARE x NÚMERICO
+INÍCIO 
+ESCREVA "digite um número x aleatório"
+LEIA x
+ESCOLHA
+CASO x>0
+ESCREVA "x é positivo"
+CASO x<0
+ESCREVA "x é negativo"
+SENÃO
+ESCREVA "x é nulo"
+FIM_ESCOLHA
+FIM_ALGORITMO
+```
