@@ -543,6 +543,7 @@ ALGORITMO calcsalário
 DECLARE salário_inicial,x , y, z, a, b
 INÍCIO
 ESCREVA "digite o salário inicial."
+LEIA salário_inicial
 ESCOLHA 
 CASO salário_inicial<=1499.15
 salário_iniciao<--x
@@ -562,3 +563,49 @@ ESCREVA "salário líquido dele(a) é de"b
 FIM_ESCOLHA 
 FIM_ALGORITMO
 ```
+
+## fluxograma
+### exercício
+
+```mermaid
+flowchart TD
+A([início])-->B[/nota/]
+B-->C{{"digite nota da avaliação."}}
+C-->D{"9.0<=nota<=10.0"}
+D--V-->X{{"nota dele(a) é classificada como A"}}
+X-->Z
+D--F-->G{"8.0<=nota<=8.9"}
+G--V-->H{{"nota dele(a) é classificada como B"}}
+H-->Z([FIM])
+G-->J{"7.0<=nota<=7.9"}
+J--V-->L{{"nota dele(a) é classificada como C"}}
+L-->Z
+J--F-->M{"5.0<=nota<=7.9"}
+M--V-->O{{"nota dele(a) é classificada como D"}}
+O-->Z
+M--F-->P["nota<5.0"]
+P-->R{{"nota dele(a) é classificada como F"}}
+R-->Z
+```
+## pseudocógo
+```
+ALGORITMO calcsalário
+DECLARE nota
+INÍCIO
+ESCREVA "digite nota da avaliação."
+LEIA nota
+ESCOLHA 
+CASO 9.0<=nota<=10.0
+ESCREVA "nota dele(a) é classificada como A"
+CASO 8.0<=nota<=8.9
+ESCREVA "nota dele(a) é classificada como B"
+CASO 7.0<=nota<=7.9
+ESCREVA "nota dele(a) é classificada como C"
+CASO "5.0<=nota<=7.9"
+ESCREVA "nota dele(a) é classificada como D"
+SENÃO nota<5.0
+ESCREVA "nota dele(a) é classificada como F"
+FIM_ESCOLHA 
+FIM_ALGORITMO
+```
+
