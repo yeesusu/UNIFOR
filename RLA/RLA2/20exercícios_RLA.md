@@ -498,6 +498,7 @@ ALGORITMO
 DECLARE média_final NÚMERICO
 INÍCIO
 ESCREVA "digite a média_final"
+LEIA média_final
 ESCOLHA
 CASO média_final>=6
 ESCREVA "AP,o aluno está aprovado."
