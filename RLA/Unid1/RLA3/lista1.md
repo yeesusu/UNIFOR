@@ -113,11 +113,18 @@ G-->Z
 
 #### Pseudocódigo (1 ponto)
 
+```ALGORITMO 
+DECLARE N1, N2, M NÚMERICO
+ESCREVA "DIGITE DOIS NÚMEROS"
+LEIA N1,N2
+soma ⇐N1+N2
+M=soma//2
+ESCREVA "MÈDIA="M
+SE M>=6
+ENTÃO ESCREVA "APROVADO"
+SENÃO ESCREVA "REPROVADO"
+FIM_ALGARITMO
 ```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
-```
-
 #### Teste de mesa (1 ponto)
 
 | nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
