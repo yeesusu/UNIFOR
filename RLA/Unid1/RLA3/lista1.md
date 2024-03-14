@@ -58,17 +58,34 @@ Sabe-se que os funcionários que recebem atualmente salário de até R$ 500 ter�
 
 #### Fluxograma (1.0 ponto)
 
-```mermaid
+```mermaid 
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([ínicio])-->B{{"digite o salario atual"}}
+B-->C[/X/]
+C-->D{X<=500}
+D--sim-->E[S=X+X*20%]
+D--não -->F[S=X+X*10%]
+E-->G{{salario final==S}}
+F-->G
+G-->H([fim])
 ```
+
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
 Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+DECLARE X, S NUMÉRICO
+ESCREVA "DIGITE O SALÁRIO ATUAL"
+LEIA X
+SE X<=500
+ENTÃO S⇐X+(X*20%)
+SENÃO S⇐X+(X*10% )
+ESCREVA "SALÁRIO FINAL=" S
+FIM_ALGORITMO.
 ```
+
+
 
 #### Teste de mesa (1.0 ponto)
 
