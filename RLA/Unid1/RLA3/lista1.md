@@ -133,9 +133,15 @@ Caso não atender a restrição de idade, calcular quantos anos faltam para o ca
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([início])-->B{{"digite a idade do candidato"}}
+B-->C[/x/]
+C-->D{x>=18}
+D--sim-->E{{"candidato pode tirar CNH"}}
+D--não -->F[F=18-X]
+F-->G{{"falta F anos para o candidato poder tirar CNH"}}
+E-->Z([fim])
+G-->Z
 ```
-
 #### Pseudocódigo (1.0 ponto)
 
 ```
