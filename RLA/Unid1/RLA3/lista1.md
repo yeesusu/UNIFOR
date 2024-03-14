@@ -89,11 +89,13 @@ FIM_ALGORITMO.
 
 #### Teste de mesa (1.0 ponto)
 
-| sara | kara | lara | maio | kio |
-|------|------|------|------|-----|
-| 1000 | 800  | 600  | 400  | 300 |
-| 100  | 80   | 60   | 80   | 60  |
-| 1100 | 880  | 660  | 480  | 360 |
+| Nome  | sálario | aumento | salário_final |
+|-------|---------|---------|---------------|
+| Sara  | 1000    | 100     | 1100          |
+| Kara  | 800     | 80      | 880           |
+| Lara  | 600     | 60      | 660           |
+| Maio  | 400     | 80      | 480           |
+| Fabio | 300     | 60      | 360           |
 
 ## Exercício 03 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
