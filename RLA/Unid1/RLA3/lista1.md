@@ -129,11 +129,11 @@ SENÃO ESCREVA "REPROVADO"
 FIM_ALGARITMO
 ```
 #### Teste de mesa (1 ponto)
-
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| Aluno | nota1 | nota2 | média | resultado  |
+|-------|-------|-------|-------|------------|
+| Maio  | 7     | 5     | 6     | aprovado!  |
+| Fábio | 5     | 6     | 5.5   | reprovado! |
+| Júnio | 8     | 3     | 5.5   | reprovado! |
 
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
