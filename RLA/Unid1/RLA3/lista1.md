@@ -89,13 +89,7 @@ FIM_ALGORITMO.
 
 #### Teste de mesa (1.0 ponto)
 
-| Nome  | sálario | aumento | salário_final |
-|-------|---------|---------|---------------|
-| Sara  | 1000    | 100     | 1100          |
-| Kara  | 800     | 80      | 880           |
-| Lara  | 600     | 60      | 660           |
-| Maio  | 400     | 80      | 480           |
-| Fabio | 300     | 60      | 360           |
+
 
 ## Exercício 03 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
@@ -129,11 +123,7 @@ SENÃO ESCREVA "REPROVADO"
 FIM_ALGARITMO
 ```
 #### Teste de mesa (1 ponto)
-| Aluno | nota1 | nota2 | média | resultado  |
-|-------|-------|-------|-------|------------|
-| Maio  | 7     | 5     | 6     | aprovado!  |
-| Fábio | 5     | 6     | 5.5   | reprovado! |
-| Júnio | 8     | 3     | 5.5   | reprovado! |
+
 
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
@@ -168,7 +158,4 @@ FIM_ALGORITMO
 
 #### Teste de mesa (1.0 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+
