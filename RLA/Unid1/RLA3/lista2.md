@@ -55,37 +55,34 @@ Calcule a média de quatro números inteiros dados.
 
 ```mermaid
 flowchart TD
-A([INICIO]) -->B{{"digite as quatro notas"}}
-B-->C[\x1,x2,x3,x4\]
-C-->D{x1%2}
-D-->E[x1==0]
-E-->F{x2%2}
-F-->G[x2==0]
-F-->E
-G-->H{x3%2}
-H-->I[x3==0]
-I-->H
-I-->J{x4%2}
-J-->K[x4==0]
-K-->J
-K-->L["M=(x1+x2+x3+x4)/4"]
-L-->N{{"média é igual"M}}
-N-->Z([fim])
+A([início])-->B[/X1, X2, X3, X4,  M/]
+B-->C{{"digite quatro notas de avaliações"}}
+C-->D["M=(X1+X2+X3+X4)/4"]
+D-->F{{"média é de"M}}
+F-->Z([fim])
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo Media
+ALGORITMO calcmédia
+DECLARE X1, X2 , X3, X4, M NÚMERICO INTEIRO
+INÍCIO
+ESCREVA"DIGITE QUATRO NOTAS DE AVALIAÇÕES "
+LEIA X1, X2, X3, X4
+M<--(X1+X2+X3+X4)/4
+ESCREVA"MÉDIA="M
 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+
+|X1|X2|X3|X4|soma| média |
+|-|-|-|-|-|-|
+|6|6|9|7|28|7
+|7|6|4|3|20|5
+|3|6|9|6|24|6
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
