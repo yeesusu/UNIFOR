@@ -151,14 +151,48 @@ Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([início])-->B{{"digite a idade do nadador"}}
+B-->C[/x/]
+C-->D{5<=x<=7}
+D--V-->E{{"o nadador é classificado na categoria de infantil A."}}
+D--F-->G{8<=x<=10}
+G--V-->H{{"o nadador é classificado na categoria de infantil B."}}
+G--F-->I{11<=x<=13}
+I--V-->J{{"o nadador é classificado na categoria de juvenil A."}}
+I--F-->K{14<=x<=17}
+K--V-->L{{"o nadador é classificado na categoria de juvenil B."}}
+K--F-->M[x>18]
+M-->N{{"o nadador é classificado na categoria de adulto."}}
+N-->Z([FIM])
+L-->Z
+J-->Z
+H-->Z
+E-->Z
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
+
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+ALGORITMO classificação
+DECLARE x NÚMERICO INTEIRO
+INÍCIO
+ESCREVA "digite a idade do nadador"
+LEIA x
+ESCOLHA
+  CASO 5<=x<=7
+  ESCREVA "o nadador é classificado na categoria de infantil A."
+  CASO 8<=x<=10
+  ESCREVA "o nadador é classificado na categoria de infantil B."
+  CASO 11<=x<=13
+  ESCREVA "o nadador é classificado na categoria de juvenil A."
+  CASO 14<=x<=17
+  ESCREVA "o nadador é classificado na categoria de juvenil B."
+  SENÃO
+  x>18
+  ESCREVA "o nadador é classificado na categoria de adulto."
+FIM_ESCOLHA
+FIM_ALGORITIMO
 ```
 
 #### Teste de mesa (0.5 ponto)
