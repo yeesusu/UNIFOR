@@ -91,10 +91,14 @@ FIM_ALGORITMO
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
 
 #### Fluxograma (1.0 ponto)
-
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([início ])-->B{{digite a temperatura em celsius}}
+B-->C[/c,F/]
+C-->D["F = (9/5 * c) + 32"]
+D-->E{{"Temperatura em Fahrenheit é de"F}}
+E-->Z([Fim])
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
