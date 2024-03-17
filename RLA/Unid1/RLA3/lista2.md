@@ -104,7 +104,13 @@ E-->Z([Fim])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ConverteCelsiusFarenheit
+ALGORITMO calctemperatura
+DECLARE c, F NÚMERICO
+INÍCIO
+ESCREVA "digite a temperatura em Celsius"
+LEIA c
+F<--(9/5*c)+32
+ESCREVA "Temperatura em Fahrenheit é de" F
 FIM_ALGORITMO
 ```
 
