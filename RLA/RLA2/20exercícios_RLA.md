@@ -83,11 +83,11 @@ ESCREVA"quantidade de chuva em milímetros="Q
 FIM_ALGORITMO
 ```
 ## teste
-|Polegadas|milímetro|
-|-|-|
-|85|2159|
-|623|15824.2|
-|12|304.8|
+|Polegadas|calculo|milímetro|
+|-|-|-|
+|85|Q<--85*25,4|2159|
+|623|Q<--623*25,4|15824.2|
+|12|Q<--12*25,4|304.8|
 
 
 ## fluxograma
