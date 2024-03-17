@@ -54,11 +54,11 @@ ESCREVA "Temperatura em Fahrenheit é de" F
 FIM_ALGORITMO
 ```
 ## teste
-|Celsius (C°)|Fahrenheit (F°)|
-|-|-|
-|75|135|
-|85|153|
-|55|99|
+|Celsius (C°)|calculo|Fahrenheit (F°)|
+|-|-|-|
+|75|(9/5*75)+32|135|
+|85|(9/5*85)+32|153|
+|55|(9/5*55)+32|99|
 
 ## fluxograma
 ### exercício2.3
