@@ -127,13 +127,50 @@ O algoritmo deve retornar o resultado da operação selecionada simulando todas 
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite dois números: "}}
+B --> C[\N1,N2\]
+C --> D{{"Escolha uma das operações [+][-][*][/]: "}}
+D --> E[\op\]
+E --> F{"op == +"}
+	F --True--> G[res = N1 + N2]
+	G --> H{{"res"}}
+	F --False--> I{"op == -"}
+		I --True--> J[res = N1 - N2]
+		J --> H
+		I --False--> K{"op == *"}
+			K --True--> L[res = N1 * N2]
+			L --> H
+			K --False--> M{"op == /"}
+				M --True--> N{"N2 != 0"}
+				N --True--> O[res = N1/N2]
+				O --> H
+				N --False--> P{{"Digite um número maior que zero"}}
+P --> Z([FIM])
+H --> Z
 ```
-
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo Calculadora
+1 ALGORITMO calculadora
+2 DECLARE X1, X2: real
+3	op: caractere
+4 INÍCIO
+5 ESCREVA "Digite dois números: "
+6 LEIA X1, X2
+7 ESCREVA "Escolha uma das operações [+][-][*][/]: "
+8 LEIA op
+9     CASO op == +
+10    CALCULE res = X1 + X2
+11      CASO op == -
+        CALCULE res = X1 - X2
+          CASO op == *
+          CALCULE res = X1 * X2
+            SENÃO OP == /
+              SE X2!= 0
+              CALCULE res = X1/X2
+              SENÃO ESCREVA"Digite um número maior que zero"
+FIM_SE
+FIM_ESCOLHA
 FIM_ALGORITMO
 ```
 
