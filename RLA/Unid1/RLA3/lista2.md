@@ -140,8 +140,8 @@ J --> H
 I --False--> K{"op == *"}
 K --True--> L[res = X1 * X2]
 L --> H
-K --False--> M{"op == /"}
-M --True--> N{"X2 != 0"}
+K --False--> M["op == /"]
+M--> N{"X2 != 0"}
 N --True--> O[res = X1/X2]
 O --> H
 N --False--> P{{"Digite um número maior que zero"}}
