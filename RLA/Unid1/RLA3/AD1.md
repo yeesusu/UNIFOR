@@ -1,12 +1,12 @@
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
-**Código/Turma:** preencha com seus dados <br>
+**Curso:** CIÊNCIAS DE COMPUTAÇÃO <br>
+**Disciplina:** RACIOCINIO LÓGICO ALGORITIMICO <br>
+**Código/Turma:** T160-39 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 3/17 <br>
+**Aluno(a):** Suzani Jia Yi Wang <br>
+**Matrícula:** 2416640 <br>
 
 **1a chamada (Sim/Não):** preencha com a opção correta <br>
 **2a chamada (Sim/Não):** preencha com a opção correta
