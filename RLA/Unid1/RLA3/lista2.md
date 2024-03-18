@@ -167,8 +167,9 @@ H --> Z([FIM])
           CALCULE res = X1 * X2
             SENÃO OP == /
               SE X2!= 0
-              CALCULE res = X1/X2
+              CALCULE res = X1 / X2
               SENÃO ESCREVA"Digite um número maior que zero"
+              CALCULE res =X1 / X2   
 FIM_SE
 FIM_ESCOLHA
 FIM_ALGORITMO
