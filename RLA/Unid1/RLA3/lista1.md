@@ -158,6 +158,7 @@ FIM_ALGORITMO
 
 #### Teste de mesa (1.0 ponto)
 |nome  |idade|idade que falta|resultado|
+|--    |--   |--             |--       |
 |Hasten|18   |--             |pode tirar CNH|
 |Savio |16   |18-16=2        |faltam 2 anos para poder tirar CNH|
 |Clara |8    |18-8=10        |faltam 10 anos para poder tirar CNH|
