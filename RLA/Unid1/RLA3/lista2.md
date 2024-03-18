@@ -128,23 +128,23 @@ O algoritmo deve retornar o resultado da operação selecionada simulando todas 
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{"Digite dois números: "}}
-B --> C[\N1,N2\]
+B --> C[\X1,X2\]
 C --> D{{"Escolha uma das operações [+][-][*][/]: "}}
 D --> E[\op\]
 E --> F{"op == +"}
-	F --True--> G[res = N1 + N2]
-	G --> H{{"res"}}
-	F --False--> I{"op == -"}
-		I --True--> J[res = N1 - N2]
-		J --> H
-		I --False--> K{"op == *"}
-			K --True--> L[res = N1 * N2]
-			L --> H
-			K --False--> M{"op == /"}
-				M --True--> N{"N2 != 0"}
-				N --True--> O[res = N1/N2]
-				O --> H
-				N --False--> P{{"Digite um número maior que zero"}}
+F --True--> G[res = X1 + X2]
+G --> H{{"res"}}
+F --False--> I{"op == -"}
+I --True--> J[res = X1 - X2]
+J --> H
+I --False--> K{"op == *"}
+K --True--> L[res = X1 * X2]
+L --> H
+K --False--> M{"op == /"}
+M --True--> N{"X2 != 0"}
+N --True--> O[res = X1/X2]
+O --> H
+N --False--> P{{"Digite um número maior que zero"}}
 P --> Z([FIM])
 H --> Z
 ```
