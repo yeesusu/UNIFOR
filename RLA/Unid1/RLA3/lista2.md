@@ -197,7 +197,8 @@ FIM_ALGORITIMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| nome | idade| comparação| categoria | 
+|  --  |   -- |   --      |   --      | 
+| maio |14    | 14<=14<=17|juvenil B  | 
+| caio |6     |5<=6<=7    |infantil A |
+|olivio|8     |8<=8<=10   |infantil B |
