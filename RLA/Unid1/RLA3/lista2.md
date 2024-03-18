@@ -55,7 +55,7 @@ Calcule a média de quatro números inteiros dados.
 
 ```mermaid
 flowchart TD
-A([início])-->B[/X1, X2, X3, X4,  M/]
+A([início])-->B[/X1, X2, X3, X4/]
 B-->C{{"digite quatro notas de avaliações"}}
 C-->D["M=(X1+X2+X3+X4)/4"]
 D-->F{{"média é de"M}}
