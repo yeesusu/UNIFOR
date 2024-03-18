@@ -145,8 +145,8 @@ M--> N{"X2 != 0"}
 N --True--> O[res = X1/X2]
 O --> H
 N --False--> P{{"Digite um número maior que zero"}}
-P --> Z([FIM])
-H --> Z
+P --> O
+H --> Z([FIM])
 ```
 #### Pseudocódigo (1.0 ponto)
 
