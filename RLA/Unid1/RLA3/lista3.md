@@ -99,15 +99,36 @@ Atualize o algoritmo para determinar se um número inteiro e positivo é par ou 
 
 #### Fluxograma (1.0 ponto)
 
-```mermaid
+```mermaid 
 flowchart TD
-A([INICIO]) --> B([FIM])
-```
-
+A([início])-->B{{"digite um número inteiro"}}
+B-->C[\x\]
+C-->D{x>0}
+D--sim-->E{x%2==0}
+D--não-->F{{"digite um número positivo"}}
+F-->G[\x\]
+G-->D
+E--não-->I{{"número escolhido é ímpar"}}
+E--sim-->H{{"número escolhido é par"}}
+I-->Z([fim])
+H-->Z
+ ```
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
+ALGORITMO ClassificaCategoria
+ESCREVA "digite um número inteiro"
+DECLARE x NÚMERICO INTEIRO
+INÍCIO
+SE x>0 ENTÃO 
+	SE X%2==0 ENTÃO
+	ESCREVA "número escolhido é par"
+	SENÃO 
+	ESCREVA "número escolhido é ímpar"
+SENÃO
+ESCREVA "digite um número positivo"	
+LEIA x
+FIM_SE
 FIM_ALGORITMO
 ```
 
