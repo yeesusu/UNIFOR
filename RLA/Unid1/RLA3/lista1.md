@@ -1,5 +1,5 @@
 # UNIFOR
-**Nome**: Nome do estudante <br>
+**Nome**: Suzani Jia Yi Wang <br>
 **Disciplina**: Raciocínio lógico algorítmico
 
 ## Lista de exercícios 01
