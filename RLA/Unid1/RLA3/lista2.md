@@ -177,10 +177,13 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| N1 | N2 | op | op == + | op == - | op == * | op == / | N2 != 0 | Saída                           |
+|----|----|----|---------|---------|---------|---------|:-------:|---------------------------------|
+| 10 | 1  | +  | True    | False   | False   | False   |    -    | 11                              |
+| 11 | 2  | -  | False   | True    | False   | False   |    -    | 9                               |
+| 12 | 3  | *  | False   | False   | True    | False   |    -    | 36                              |
+| 13 | 4  | /  | False   | False   | False   | True    |   True  | 3,25                            |
+| 14 | 0  | /  | False   | False   | False   | True    |  False  | Digite um número maior que zero |
 
 ### Exercício 04 (2.5 pontos)
 Elaborar um algoritmo que, dada a idade, classifique nas categorias: infantil A (5 - 7 anos), infantil B (8 -10 anos), juvenil A (11 - 13 anos), juvenil B (14 -17 anos) e adulto (maiores que 18 anos).
