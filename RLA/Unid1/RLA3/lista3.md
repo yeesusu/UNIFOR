@@ -1,5 +1,5 @@
 # UNIFOR
-**Nome**: Nome do estudante <br>
+**Nome**: Suzani Jia Yi Wang <br>
 **Disciplina**: Raciocínio lógico algorítm
 
 ## Exercício exemplo 1
@@ -134,59 +134,89 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| entrada | negativo | positivo | impar | par | saida |
+|--|--|--|--|--|--|
+| 1 | nao | sim | sim | nao| impar|
+| 2 |nao | sim | nao | sim| par|
+| 12 |nao | sim | nao | sim| par|
+| -1 | sim | nao |  | | numero negativo|
 
 ### Exercício 02 (2.5 pontos)
 Faça um algoritmo que exiba na tela uma contagem de 0 até 30, exibindo apenas os múltiplos de 3.
 
 #### Fluxograma (1.0 ponto)
 
-```mermaid
+``` mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([inicio])-->B[[i=0 até 30 passo 3]]
+B-->C{{i}}
+C-->B
+B-->D
+C-->D([Fim])
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+ALGORITMO multiplo
+DECLARE i NÚMERICO INTEIRO
+INICIO
+i<--0
+PARA i DE 1 ATÉ 30 PASSO 3 FAÇA
+ESCREAVA i
+FIM_PARA
+FIM
 ```
-
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+0|3|6|9|12|15|18|21|24|27|30
+|-|-|-|-|-|-|-|-|-|-|-|
 
 ### Exercício 03 (2.5 pontos)
 Dada uma sequência de números inteiros, calcular a sua soma. 
 Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrever o número 35.
 
 #### Fluxograma (1.0 ponto)
-
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([Inicio])-->B{{"digite um numero "}}
+B-->C[\n\]
+C-->D{n!=0}
+D--não-->H{{soma}}
+D--sim-->E[soma=+n]
+E-->F{{"digite um numero"}}
+F-->G[\n\]
+G-->D
+H-->I([Fim])
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+ALGORITMO soma
+DECLARE n, soma: NUMERICO
+INICIO
+ESCREVA "digite um numero"
+LEIA n
+soma<--0
+	ENQUANTO (n!=0) FAÇA
+		soma=+n
+		ESCREVA "digite um numero"
+		LEIA n
+	FIM_ENQUANTO
+	ESCREVA soma
+FIM
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+ordem|numero|n!=0|soma|saída
+-|-|-|-|-
+1|1|sim|1
+2|2|sim|3
+3|3|sim|6
+4|4|sim|10
+5|0|não|10|10
 
 ### Exercício 04 (2.5 pontos)
 Escreva um programa que leia a nota de diversos alunos, até que seja digitada uma nota negativa. 
@@ -197,19 +227,45 @@ Ex. Foram lidas 14 notas. A média aritmética é 6.75!
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([inicio])-->B{{"digite uma nota"}}
+B-->C[\n\]
+C-->D{n>=0}
+D--não-->E{{soma/a}}
+D--sim-->F[soma=+n]
+F-->G[a=+1]
+G-->H{{"digite uma nota"}}
+H-->I[\n\]
+I-->D
+E-->J([Fim])
 ```
 
 #### Pseudocódigo (1.0 ponto)
-
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+ALGORITMO media
+DECLARE n, a, soma: NUMERICO
+INICIO
+soma <-- 0
+a <-- 0
+ESCREVA "digite uma nota"
+LEIA n
+	SE (n>=0) ENTÃO
+		soma <-- +n
+		a <-- +1
+		ESCREVA "digite uma nota"
+		LEIA n
+	SENÃO 
+		ESCREVA soma/a
+	FIM_SE 
+FIM
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+nota | é >=0 | soma | a | saída
+-|-|-|-|-
+8|sim|8|1
+7|sim|15|2
+9|sim|24|3
+5|sim|29|4
+9|sim|38|5
+-3|nao|38|5|7.6
