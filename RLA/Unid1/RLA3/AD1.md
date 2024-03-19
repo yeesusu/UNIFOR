@@ -4,7 +4,7 @@
 **Disciplina:** Ráciocinio Lógico <br>
 **Código/Turma:** T160-39 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
+**Data:**  <br>
 **Aluno(a):** Suzani Jia Yi Wang <br>
 **Matrícula:** 2416640 <br>
 
