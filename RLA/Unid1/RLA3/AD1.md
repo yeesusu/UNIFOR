@@ -72,7 +72,16 @@ I --> J{{"b =", b}}
 
 ```
 Algoritmo TrocaValores
-INICIO
+DECLARE n, i NÚMERICO
+ESCREVA "Digite o número de alunos"
+LEIA n
+INÍCIO
+conta<--0
+i<--1
+SE i<=n ENTÃO
+ESCREVA "Digite a nota do aluno,"i
+LEIA nota
+SENÃO
 ...
 FIM
 ```
