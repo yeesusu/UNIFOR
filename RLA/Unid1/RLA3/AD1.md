@@ -414,7 +414,7 @@ Os primeiros termos são: $0, 1, 1, 2, 3, 5, 8, 13, \dots$. Cada termo, além do
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{"Número de termos da série Fibonacci:"}}
-B-->C[/X/]
+B-->C[/ntermos/]
 C --> D[a = 0]
 D --> E[b = 1]
 E --> F[[i=1 ATÉ n PASSO 1]]
@@ -430,11 +430,20 @@ K --LOOP--> F
 
 ```
 Algoritmo GeraFibonacci
-DECLARE n, i, a, b, termo_atual
+DECLARE ntermos, n, i, a, b, termo_atual
 ESCREVA "Número de termos da série Fibonacci:"
-LEIA 
+LEIA ntermos, a, b
 INICIO
-
+a <-- 0
+b <-- 1
+PARA <i> DE <1> ATE <n> PASSO <1> FAÇA
+ESCREVA "a"
+termo_atual <-- a + b
+LEIA termo_atual
+a <-- b
+b <-- termo_atual
+FIM_PARA
+FIM_ALGORITIMO
 ```
 #### Teste de mesa
 
