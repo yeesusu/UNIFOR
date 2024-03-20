@@ -228,9 +228,26 @@ K --LOOP--> G
 
 ```
 Algoritmo SomaNumeros
+DECLARE n, i, num, soma NÚMERICO
+ESCREVA "Digite a quantidade de números (n >= 0):"
+LEIA n
 INICIO
-...
-FIM
+SE n>=0 ENTÃO
+soma<--0
+i<--1
+SE i <= n ENTÃO
+  ENQUANTO i <= n FAÇA
+  ESCREVA "Digite um número:"
+  LEIA num
+  soma <-- +num
+  i<-- +1
+  SENÃO
+  ESCREVA "A soma dos numeros é ,"soma
+SENÃO
+ESCREVA "O valor deve ser maior ou igual a zero!"
+FIM_SE
+FIM_ENQUANTO
+FIM_ALGORITIMO
 ```
 
 #### Teste de mesa
