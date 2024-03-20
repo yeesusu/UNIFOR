@@ -150,7 +150,7 @@ J --LOOP--> E
 
 ```
 Algoritmo ContaAprovacoes
-DECLARE n, i, cont NÚMERICO
+DECLARE n, i, cont: NÚMERICO
 ESCREVA "Digite o número de alunos"
 LEIA n
 INÍCIO
@@ -228,7 +228,7 @@ K --LOOP--> G
 
 ```
 Algoritmo SomaNumeros
-DECLARE n, i, num, soma NÚMERICO
+DECLARE n, i, num, soma: NÚMERICO
 ESCREVA "Digite a quantidade de números (n >= 0):"
 LEIA n
 INICIO
@@ -300,9 +300,20 @@ I --LOOP--> E
 
 ```
 Algoritmo SomaSerie
-INICIO
-...
-FIM
+
+DECLARE n, S,numerador, denominador, termo: NÚMERICO
+ESCREVA "Digite o número de termos da série S:"
+LEIA n
+INÍCIO
+S <-- 0
+PARA <i> DE <0> ATE <n> [PASSO1] FAÇA
+numerador <-- 2*i+1
+denominador <-- 2*i+2
+termo <-- numerador/denominador
+S <-- termo
+FIM_PARA
+ESCREVA "Soma da série S é ," S
+FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.25 ponto)
@@ -349,8 +360,7 @@ H --> I
 ```
 Algoritmo CalcFatorial
 INICIO
-...
-FIM
+
 ```
 
 #### Teste de mesa
