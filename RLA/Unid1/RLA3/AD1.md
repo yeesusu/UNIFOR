@@ -72,16 +72,7 @@ I --> J{{"b =", b}}
 
 ```
 Algoritmo TrocaValores
-DECLARE n, i NÚMERICO
-ESCREVA "Digite o número de alunos"
-LEIA n
-INÍCIO
-conta<--0
-i<--1
-SE i<=n ENTÃO
-ESCREVA "Digite a nota do aluno,"i
-LEIA nota
-SENÃO
+
 ...
 FIM
 ```
@@ -150,9 +141,24 @@ J --LOOP--> E
 
 ```
 Algoritmo ContaAprovacoes
-INICIO
-...
-FIM
+DECLARE n, i NÚMERICO
+ESCREVA "Digite o número de alunos"
+LEIA n
+INÍCIO
+cont <--0
+i<--1
+SE i<=n ENTÃO
+ESCREVA "Digite a nota do aluno,"i
+LEIA nota
+  SE nota >=500 E nota<=100 ENTÃO
+  cont <-- +1
+  i<-- +1
+  SENÃO
+  i<-- +1
+SENÃO
+ESCREVA "Número de alunos aprovados:"cont
+FIM_SE
+FIM_ALGORITMO
 ```
 
 #### Teste de mesa 01
