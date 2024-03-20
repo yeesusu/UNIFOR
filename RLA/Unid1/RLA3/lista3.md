@@ -117,8 +117,9 @@ H-->Z
 
 ```
 ALGORITMO ClassificaCategoria
+DECLARE x: INTEIRO
 ESCREVA "digite um número inteiro"
-DECLARE x NÚMERICO INTEIRO
+LEIA x
 INÍCIO
 SE x>0 ENTÃO 
 	SE X%2==0 ENTÃO
@@ -126,8 +127,7 @@ SE x>0 ENTÃO
 	SENÃO 
 	ESCREVA "número escolhido é ímpar"
 SENÃO
-ESCREVA "digite um número positivo"	
-LEIA x
+ESCREVA "digite um número positivo"
 FIM_SE
 FIM_ALGORITMO
 ```
@@ -159,11 +159,12 @@ C-->D([Fim])
 
 ```
 ALGORITMO multiplo
-DECLARE i NÚMERICO INTEIRO
+DECLARE i:INTEIRO
 INICIO
 i<--0
 PARA i DE 1 ATÉ 30 PASSO 3 FAÇA
-ESCREAVA i
+ESCREAVA "i"
+LEIA i
 FIM_PARA
 FIM
 ```
@@ -248,14 +249,15 @@ soma <-- 0
 a <-- 0
 ESCREVA "digite uma nota"
 LEIA n
-	SE (n>=0) ENTÃO
-		soma <-- +n
-		a <-- +1
-		ESCREVA "digite uma nota"
-		LEIA n
-	SENÃO 
-		ESCREVA soma/a
-	FIM_SE 
+SE (n>=0) ENTÃO
+soma <-- +n
+a <-- +1
+ESCREVA "digite uma nota"
+LEIA n
+SENÃO
+ESCREVA "soma/a"
+LEIA soma, a
+FIM_SE 
 FIM
 ```
 
