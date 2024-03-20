@@ -79,6 +79,7 @@ LEIA a
 ESCREVA "Digite o valor da b:"
 LEIA b
 aux <-- a
+LEIA aux
 a <-- b
 b <-- aux
 ESCREVA "a ="a
@@ -498,8 +499,10 @@ LEIA num
 INICIO
 SE num >= 0 ENTÃO
   num_inv <-- 0
+LEIA num_inv
   ENQUANTO num > 0 FAÇA
   digito <-- num % 10
+LEIA digito
   num_inv <-- num_inv*10 + digito
   num <-- num//10
 FIM_ENQUANTO
