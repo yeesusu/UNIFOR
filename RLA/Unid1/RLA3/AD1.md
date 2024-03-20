@@ -236,17 +236,18 @@ SE n>=0 ENTÃO
 soma<--0
 i<--1
 SE i <= n ENTÃO
-  ENQUANTO i <= n FAÇA
-  ESCREVA "Digite um número:"
-  LEIA num
-  soma <-- +num
-  i<-- +1
+  REPITA  
+    ESCREVA "Digite um número:"
+    LEIA num
+    soma <-- +num
+    i<-- +1
+    ATE_QUE i > n
   SENÃO
   ESCREVA "A soma dos numeros é ,"soma
 SENÃO
 ESCREVA "O valor deve ser maior ou igual a zero!"
 FIM_SE
-FIM_ENQUANTO
+FIM_QUE
 FIM_ALGORITIMO
 ```
 
