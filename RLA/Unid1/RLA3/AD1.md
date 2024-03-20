@@ -72,9 +72,18 @@ I --> J{{"b =", b}}
 
 ```
 Algoritmo TrocaValores
-
-...
-FIM
+INÍCIO
+DECLARE a, b, aux NÚMERICO
+ESCREVA "Digite o valor da a:"
+LEIA a
+ESCREVA "Digite o valor da b:"
+LEIA b
+aux <-- a
+a <-- b
+b <-- aux
+ESCREVA "a ="a
+ESCREVA "b ="b
+FIM_ALGORITMO
 ```
 
 #### Teste de mesa
@@ -141,7 +150,7 @@ J --LOOP--> E
 
 ```
 Algoritmo ContaAprovacoes
-DECLARE n, i NÚMERICO
+DECLARE n, i, cont NÚMERICO
 ESCREVA "Digite o número de alunos"
 LEIA n
 INÍCIO
