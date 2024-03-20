@@ -504,6 +504,9 @@ SE num >= 0 ENTÃO
   num <-- num//10
 FIM_ENQUANTO
 ESCREVA "Número invertido:", numero_inv
+SENÃO
+ESCREVA "O número deve ser positivo!"
+FIM_SE
 FIM_ALGORITMO
 
 ```
