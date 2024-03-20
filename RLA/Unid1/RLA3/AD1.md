@@ -414,15 +414,16 @@ Os primeiros termos são: $0, 1, 1, 2, 3, 5, 8, 13, \dots$. Cada termo, além do
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{"Número de termos da série Fibonacci:"}}
-B --> C[a = 0]
-C --> D[b = 1]
-D --> E[[i=1 ATÉ n PASSO 1]]
-E --"i > n"--> J([FIM])
-E --"i=1,2,...,n"--> F{{a}}
-F --> G[termo_atual = a + b]
-G --> H[a = b]
-H --> I[b = termo_atual]
-I --LOOP--> E 
+B-->C[/X/]
+C --> D[a = 0]
+D --> E[b = 1]
+E --> F[[i=1 ATÉ n PASSO 1]]
+F --"i > n"--> J([FIM])
+F --"i=1,2,...,n"--> G{{a}}
+G --> H[termo_atual = a + b]
+H --> I[a = b]
+I --> K[b = termo_atual]
+K --LOOP--> F 
 ```
 
 #### Pseudocódigo (2 pontos)
@@ -431,7 +432,7 @@ I --LOOP--> E
 Algoritmo GeraFibonacci
 DECLARE n, i, a, b, termo_atual
 ESCREVA "Número de termos da série Fibonacci:"
-LEIA
+LEIA 
 INICIO
 
 ```
