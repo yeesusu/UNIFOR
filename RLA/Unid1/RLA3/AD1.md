@@ -79,7 +79,6 @@ LEIA a
 ESCREVA "Digite o valor da b:"
 LEIA b
 aux <-- a
-LEIA aux
 a <-- b
 b <-- aux
 ESCREVA "a ="a
@@ -156,9 +155,7 @@ ESCREVA "Digite o número de alunos"
 LEIA n
 INÍCIO
 cont <--0
-LEIA cont
 i<--1
-LEIA i
 SE i<=n ENTÃO
 ESCREVA "Digite a nota do aluno,"i
 LEIA nota
@@ -238,13 +235,11 @@ INICIO
 SE n>=0 ENTÃO
 soma<--0
 i<--1
-LEIA i
 SE i <= n ENTÃO
   REPITA  
     ESCREVA "Digite um número:"
     LEIA num
     soma <-- +num
-    LEIA soma
     i<-- +1
     ATE_QUE i > n
   SENÃO
@@ -311,15 +306,10 @@ ESCREVA "Digite o número de termos da série S:"
 LEIA n
 INÍCIO
 S <-- 0
-LEIA S
 PARA <i> DE <0> ATE <n> [PASSO1] FAÇA
-LEIA i
 numerador <-- 2*i+1
-LEIA numerador
 denominador <-- 2*i+2
-LEIA denominador
 termo <-- numerador/denominador
-LEIA termo
 S <-- termo
 FIM_PARA
 ESCREVA "Soma da série S é ," S
@@ -376,9 +366,7 @@ INICIO
 SE n >= 0 ENTÃO
 fator <-- 1
 PARA <i> DE <1> ATE n PASSO <1> FAÇA
-LEIA i
 fator <-- fator * i
-LEIA fator
 FIM_PARA
 ESCREVA 'O fatorial de, n, é:" fator
 SENÃO 
@@ -440,7 +428,6 @@ b <-- 1
 PARA <i> DE <1> ATE <n> PASSO <1> FAÇA
 ESCREVA "a"
 termo_atual <-- a + b
-LEIA termo_atual
 a <-- b
 b <-- termo_atual
 FIM_PARA
@@ -499,10 +486,8 @@ LEIA num
 INICIO
 SE num >= 0 ENTÃO
   num_inv <-- 0
-LEIA num_inv
   ENQUANTO num > 0 FAÇA
   digito <-- num % 10
-LEIA digito
   num_inv <-- num_inv*10 + digito
   num <-- num//10
 FIM_ENQUANTO
