@@ -102,7 +102,7 @@ E-->Z([Fim])
 
 ```
 ALGORITMO calctemperatura
-DECLARE c, F NÚMERICO
+DECLARE c, F :REAIS
 INÍCIO
 ESCREVA "digite a temperatura em Celsius"
 LEIA c
@@ -152,7 +152,7 @@ H --> Z([FIM])
 
 ```
 1 ALGORITMO calculadora
-2 DECLARE X1, X2: real
+2 DECLARE X1, X2:REAIS
 3	op: caractere
 4 INÍCIO
 5 ESCREVA "Digite dois números: "
@@ -216,7 +216,7 @@ E-->Z
 
 ```
 ALGORITMO classificação
-DECLARE x NÚMERICO INTEIRO
+DECLARE x : INTEIRO
 INÍCIO
 ESCREVA "digite a idade do nadador"
 LEIA x
