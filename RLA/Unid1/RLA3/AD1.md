@@ -73,7 +73,7 @@ I --> J{{"b =", b}}
 ```
 Algoritmo TrocaValores
 INÍCIO
-DECLARE a, b, aux NÚMERICO
+DECLARE a, b, aux :REAIS
 ESCREVA "Digite o valor da a:"
 LEIA a
 ESCREVA "Digite o valor da b:"
@@ -150,7 +150,7 @@ J --LOOP--> E
 
 ```
 Algoritmo ContaAprovacoes
-DECLARE n, i, cont: NÚMERICO
+DECLARE n, i, cont: REAIS
 ESCREVA "Digite o número de alunos"
 LEIA n
 INÍCIO
@@ -228,7 +228,7 @@ K --LOOP--> G
 
 ```
 Algoritmo SomaNumeros
-DECLARE n, i, num, soma: NÚMERICO
+DECLARE n, i, num, soma: REAIS
 ESCREVA "Digite a quantidade de números (n >= 0):"
 LEIA n
 INICIO
@@ -359,7 +359,7 @@ H --> I
 
 ```
 Algoritmo CalcFatorial
-DECLARE n, i, fator: NÚMERICO
+DECLARE n, i, fator: REAIS
 ESCREVA "Digite um numero inteiro nao-negativo:"
 LEIA n
 INICIO
@@ -419,7 +419,7 @@ K --LOOP--> F
 
 ```
 Algoritmo GeraFibonacci
-DECLARE ntermos, n, i, a, b, termo_atual
+DECLARE ntermos, n, i, a, b, termo_atual: REAIS
 ESCREVA "Número de termos da série Fibonacci:"
 LEIA ntermos, a, b
 INICIO
@@ -481,7 +481,7 @@ E --> W
 
 ```
 Algoritmo InverteInteiro
-DECLARE num, digito, num_inv: NÚMERICO
+DECLARE num, digito, num_inv: REAIS
 ESCREVA "Digite um número inteiro:"
 LEIA num
 INICIO
