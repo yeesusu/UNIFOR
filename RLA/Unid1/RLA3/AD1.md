@@ -423,6 +423,7 @@ DECLARE ntermos, n, i, a, b, termo_atual
 ESCREVA "Número de termos da série Fibonacci:"
 LEIA ntermos, a, b
 INICIO
+ntermos <-- i
 a <-- 0
 b <-- 1
 PARA <i> DE <1> ATE <n> PASSO <1> FAÇA
