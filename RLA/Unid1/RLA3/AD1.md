@@ -364,13 +364,13 @@ ESCREVA "Digite um numero inteiro nao-negativo:"
 LEIA n
 INICIO
 SE n >= 0 ENTÃO
-fator <-- 1
-PARA <i> DE <1> ATE n PASSO <1> FAÇA
-fator <-- fator * i
-FIM_PARA
-ESCREVA 'O fatorial de, n, é:" fator
+    fator <-- 1
+    PARA <i> DE <1> ATE n PASSO <1> FAÇA
+        fator <-- fator * i
+    FIM_PARA
+    ESCREVA 'O fatorial de, n, é:" fator
 SENÃO 
-ESCREVA "O valor deve ser maior ou igual a zero!"
+    ESCREVA "O valor deve ser maior ou igual a zero!"
 FIM_SE
 FIM_ALGORITMO
 ```
