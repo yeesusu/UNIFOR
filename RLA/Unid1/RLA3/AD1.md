@@ -306,11 +306,11 @@ ESCREVA "Digite o número de termos da série S:"
 LEIA n
 INÍCIO
 S <-- 0
-PARA <i> DE <0> ATE <n> [PASSO1] FAÇA
-numerador <-- 2*i+1
-denominador <-- 2*i+2
-termo <-- numerador/denominador
-S <-- termo
+    PARA <i> DE <0> ATE <n> [PASSO1] FAÇA
+      numerador <-- 2*i+1
+      denominador <-- 2*i+2
+      termo <-- numerador/denominador
+    S <-- termo
 FIM_PARA
 ESCREVA "Soma da série S é ," S
 FIM_ALGORITMO
@@ -426,11 +426,11 @@ INICIO
 ntermos <-- i
 a <-- 0
 b <-- 1
-PARA <i> DE <1> ATE <n> PASSO <1> FAÇA
-ESCREVA "a"
-termo_atual <-- a + b
-a <-- b
-b <-- termo_atual
+  PARA <i> DE <1> ATE <n> PASSO <1> FAÇA
+  ESCREVA "a"
+   termo_atual <-- a + b
+   a <-- b
+   b <-- termo_atual
 FIM_PARA
 FIM_ALGORITIMO
 ```
@@ -487,12 +487,12 @@ LEIA num
 INICIO
 SE num >= 0 ENTÃO
   num_inv <-- 0
-  ENQUANTO num > 0 FAÇA
-  digito <-- num % 10
-  num_inv <-- num_inv*10 + digito
-  num <-- num//10
+    ENQUANTO num > 0 FAÇA
+    digito <-- num % 10
+    num_inv <-- num_inv*10 + digito
+    num <-- num//10
 FIM_ENQUANTO
-ESCREVA "Número invertido:", numero_inv
+    ESCREVA "Número invertido:", numero_inv
 SENÃO
 ESCREVA "O número deve ser positivo!"
 FIM_SE
