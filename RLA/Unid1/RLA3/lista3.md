@@ -195,7 +195,7 @@ H-->I([Fim])
 
 ```
 ALGORITMO soma
-DECLARE n, soma: NUMERICO
+DECLARE n, soma: REAIS
 INICIO
 ESCREVA "digite um numero"
 LEIA n
@@ -243,7 +243,7 @@ E-->J([Fim])
 #### Pseudocódigo (1.0 ponto)
 ```
 ALGORITMO media
-DECLARE n, a, soma: NUMERICO
+DECLARE n, a, soma: REAIS
 INICIO
 soma <-- 0
 a <-- 0
